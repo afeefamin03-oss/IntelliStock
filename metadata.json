@@ -1,0 +1,6 @@
+{
+  "name": "IntelliStock",
+  "description": "An interactive Java Swing & JDBC learning playground and simulation for high-quality inventory management, featuring object-oriented design, encapsulated product records, SQLite/JDBC visualization, and an AI tutor.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

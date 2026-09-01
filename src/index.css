@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-serif: "Cormorant Garamond", "Playfair Display", Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --color-luxury-gold: #c5a880;
+  --color-luxury-gold-dark: #b3946b;
+  --color-luxury-cream: #faf9f6;
+  --color-luxury-charcoal: #12110f;
+  --color-luxury-bronze: #2a241e;
+}
+
+body {
+  font-family: var(--font-sans);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Glassmorphism Utilities */
+.glass-panel-light {
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 8px 32px 0 rgba(197, 168, 128, 0.08);
+}
+
+.glass-panel-dark {
+  background: rgba(26, 24, 22, 0.65);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.glass-card-light {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0 4px 20px 0 rgba(197, 168, 128, 0.05);
+}
+
+.glass-card-dark {
+  background: rgba(36, 32, 29, 0.55);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, #e5d5c0 0%, #c5a880 50%, #9a7d56 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-gold-dark {
+  background: linear-gradient(135deg, #c5a880 0%, #a4865e 50%, #765e3f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Custom Status classes corresponding to the Geometric Balance design spec */
+.status-low {
+  color: #f87171;
+  background: rgba(248, 113, 113, 0.1);
+  padding: 2px 8px;
+  border-radius: 9999px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  border: 1px solid rgba(248, 113, 113, 0.2);
+}
+
+.status-normal {
+  color: #c5a880;
+  background: rgba(197, 168, 128, 0.1);
+  padding: 2px 8px;
+  border-radius: 9999px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  border: 1px solid rgba(197, 168, 128, 0.2);
+}
+
+.btn-primary {
+  background-color: #c5a880;
+  color: #12110f;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #b3946b;
+  transform: translateY(-1px);
+}
+
